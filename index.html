@@ -27,9 +27,109 @@
 
 
 <div id="impress">
-    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-        <q>Aren't you just <b>bored</b> with all those slides-based presentations?</q>
+    <div id="diapositiva1" class="step slide" data-x="-1000" data-y="-1500">
+        <h1>Redes inalámbricas de sensores</h1>
+        <p>Israel Blancas Álvarez</p>
+        <img src="images/1.jpg"/>
     </div>
+
+    <div id="diapositiva2" class="step slide" data-x="0" data-y="-1500">
+      <h1>¿Qué es una red inalámbrica de sensores? (WSN)</h1>
+      <p>Es un conjunto de elementos sensores autónomos (llamados motas o nodos) distribuidos en el espacio y que se comunican entre sí de forma
+        inalámbrica, recogiendo información de sus sensores. En estos nodos no se realiza procesamiento, si no que solo envían información o, como ocurre
+        en muchas aplicaciones, reciben datos para dar alguna orden a elementos actuadores</p>
+        <br/>
+      <p>Son redes inalámbricas Ad-Hoc (cooperan entre ellas para formar una red) sin infraestructura física preestablecida ni administración central.</p>
+    </div>
+
+    <div id="diapositiva3" class="step slide" data-x="1000" data-y="-1500">
+      <h1>¿Cómo surgen?</h1>
+      <p>La posibilidad de crear dispositivos de bajo coste, pequeño tamaño y larga duración sin mantenimiento
+         con capacidades de obtener información del entorno y enviarla de forma inalámbrica a un centro de procesado, ofrece
+         solución a multitud de problemas existentes.</p>
+         <br/>
+      <p>Que cada vez la capacidad de cómputo sea mayor a un menor precio y en un menor espacio, ayuda al desarrollo de esta tecnología</p>
+    </div>
+
+
+    <div id="diapositiva4" class="step slide" data-x="2000" data-y="-1500">
+      <h1>Hardware básico de un nodo</h1>
+      <ul>
+        <li>Transceptor: para realizar comunicaciones</li>
+        <li>Procesador: pequeños procesamientos</li>
+        <li>Sensores: obtener valores digitales del mundo físico</li>
+        <li>Memoria: guardar algunos datos</li>
+        <li>Batería: alimentar el dispositivo</li>
+      </ul>
+      <br/>
+      <p>Puesto que se busca la autonomía del sistema, se desea que el consumo sea mínimo. Es por ello que en esta unidad no se hacen
+        procesamientos (que consumirían mucha energía)</p>
+      </div>
+
+
+      <div id="diapositiva5" class="step slide" data-x="3000" data-y="-1500">
+        <h1>Topologías</h1>
+        <table>
+          <tr>
+            <td>
+              <img src="images/2.jpg"/>
+              Estrella
+            </td>
+            <td>
+              <img src="images/3.jpg"/>
+              Árbol
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="images/4.jpg"/>
+              Malla con conexión parcial
+            </td>
+            <td>
+              <img src="images/5.jpg"/>
+              Mallado con conexión total
+            </td>
+          </tr>
+        </table>
+        </div>
+
+
+        <div id="diapositiva6" class="step slide" data-x="4000" data-y="-1500">
+          <h1>Sistemas operativos (I)</h1>
+          <ul>
+            <li>Bertha: modelar, testear y desplegar una red de sensores distribuida de muchos nodos idénticos. Administración de procesos,
+            manejo de las estructuras de datos, organización de los vecinos, interfaz de red...</li>
+            <li>Nut/OS: SO para aplicaciones en tiempo real. Trabaja con CPU de 1 Byte. Multihilo, mecanismos de sincronización, administración de memoria dinámica, temporizadores asíncronos, puertos serie de E/S...</li>
+            <li>Contiki: SO para usar en sistemas embebidos (como las motas)</li>
+            <li>CORMOS: SO diseñado para WSN</li>
+          </ul>
+        </div>
+
+        <div id="diapositiva7" class="step slide" data-x="5000" data-y="-1500">
+          <h1>Sistemas operativos (II)</h1>
+          <ul>
+            <li>eCos: SO en tiempo real para aplicaciones y sistemas embebidos que usan solo un proceso</li>
+            <li>TinyOS: es de los más conocidos. Escrito en nesC (una variación de C para contrarrestar los problemas de uso de memoria). Está desarrollado
+            para redes de sensores con recursos limitados. Soporta gran cantidad de microprocesadores. Es un sistema operativo "event-driven", es decir, dirigido a eventos.
+            Su núcleo ocupa 400bytes. Los comandos de configuración son implementados por el vendedor y los eventos el usuario</li>
+            <li>Otros: LiteOS, t-Kernel, MagnetOS...</li>
+          </ul>
+        <img src="images/6.jpg"/>
+        </div>
+
+        <div id="diapositiva8" class="step slide" data-x="5000" data-y="-1500">
+          <h1>Lenguajes de programación</h1>
+          <ul>
+            <li>nesC: "dialecto" de C muy utilizado en TinyOS</li>
+            <li>SNACK: utilizado como sustituto del anterior cuando el volúmen de datos es muy alto o es preciso hacer muchos cálculos. Más sencillo y eficiente</li>
+            <li>Protothreads: diseñado para programación concurrente. Provee de hilos de 2 bytes</li>
+            <li>DCL: lenguaje de composición distribuido</li>
+            <li>GalsC: programación funcional. Compatible con nesC. Permite concurrencia y es fácil de depurar</li>
+            <li>SQTL: lenguaje de consulta sobre motas</li>
+            </ul>
+          </div>
+
+
 
 
     <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
