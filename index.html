@@ -142,6 +142,11 @@
               el entorno de producción</p>
           </div>
 
+          <div id="diapositiva9b" class="step slide" data-x="7000" data-y="-1500" data-z="-5000">
+            <h1>Simuladores: NS-2</h1>
+            <iframe width="100%" height="80%" src="http://www.youtube.com/embed/Om672pGBOFo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+
           <div id="diapositiva10" class="step slide" data-x="7000" data-y="0">
             <h1>Problemas cartacterísticos de las WSN</h1>
             <ul>
@@ -175,6 +180,7 @@
                     dispositivo a su alcance y envía balizas. Incluso, puede convertirse en coordinador PAN iniciando su propia red) y dispositivo (solo comunica con un coordinador o coordinador PAN)
                   <li>Dos tipos de dispositivos: de función completa (debe tener memoria suficiente para guardar la información de enrutamiento que imponga la red. Puede tomar cualquiera de los tres roles) o de función
                   reducida (poca memoria y solo puede funcionar como un dispositivo de red)</li>
+                </ul>
               </div>
 
               <div id="diapositiva13" class="step slide" data-x="4000" data-y="0">
@@ -184,8 +190,102 @@
                   <li>Baja velocidad de transferencia de datos y bajo coste</li>
                   <li>Protocolo de acceso al medio poco eficiente (en términos energéticos)</li>
                   <li>Topología de red formada por nodos simples y nodos de enrutamiento, con interconexiones en estrella (reducción de fiabilidad, del alcance y costoso energéticamente, ya que los nodos enrutadores tienen que estar encendidos siempre)</li>
+                </ul>
               </div>
 
+
+
+
+              <div id="diapositiva14" class="step slide" data-x="3000" data-y="0">
+                <h1>WirelessHART</h1>
+                <ul>
+                  <li>Es una adaptación de HART, diseñado para la monitorización de sensores en entornos industriales</li>
+                  <li>Acceso al medio mediante TDMA (ahorro tiempo y energía en sensores)</li>
+                  <li>Topología de red mallada (mayor fiabilidad)</li>
+                  <li>Todos los nodos pueden encaminar y son iguales (mayor simplicidad)</li>
+                  <li>Compatible con IEEE 802.15.4</li>
+                  <li>Protocolo de mensajes propio (Smart Data)</li>
+                  <li>Nuevo estándar (SP100.11) en desarrollo por ISA</li>
+                </ul>
+                </div>
+
+
+                <div id="diapositiva15" class="step slide" data-x="2000" data-y="0">
+                  <h1>DUST Networks</h1>
+
+                    <p>Empresa surgida a partir un proyecto llevado a cabo por Kris Pister en Berkeley</p>
+                    <p>Protocolo propio TSMP</p>
+                    <ul>
+                      <li>Capa física: algoritmos para evitar interferencias</li>
+                      <li>Capa MAC: TDMA sincronizando en slots de tiempo (usa ACK, evita colisiones y es altamente escalable)</li>
+                      <li>Auto-organización: descubrimiento de vecinos, ajuste de potencia RF y adquisicón de información de sincronización y saltos de frecuencia</li>
+                      <li>Cada nodo tiene varias rutas para llegar a un mismo destino (sabe si llega o no mediante ACK)</li>
+                      <li>Gracias al uso de un acceso al medio sincronizado, el consumo de energía se reduce drásticamente</li>
+                    </ul>
+                  </div>
+
+
+
+                    <div id="diapositiva16" class="step slide" data-x="1000" data-y="0">
+                      <h1>Tendencias</h1>
+                      <ul>
+                        <li>6LoWPAN: adaptación de IPv6 para conseguir compatibilidad entre Internet y WSN</li>
+                        <li>Convergencia en el formato de los datos</li>
+                        <li>"Pervasive computing": computación ubícua, donde la red de sensores tome decisiones</li>
+                        <li>Web de sensores: una red amorfa de sensores distribuidos en el espacio que se comunican inalámbricamente entre ellos.
+                          La información que capta un nodo es compartida con todos los nodos de la red, permitiendo la actuación de toda la web de
+                          forma conjunta y autónoma. No necesita de agentes exteriores para funcionar.</li>
+                      </ul>
+                      </div>
+
+
+                      <div id="diapositiva17" class="step slide" data-x="0" data-y="0">
+                        <h1>Fabricantes</h1>
+                        <p>Algunos fabricantes conocidos son:</p>
+                        <br/>
+                        <ul>
+                          <li>CROSSBOW: productos como Mica, Mica2, Micaz, Mica2dot</li>
+                          <li>SENTILLA:: Tmote Sky, diseñados por la Universidad de Berkeley y preparados para ser usados por TinyOS.</li>
+                          <li>SHOCKFISH:: empresa suiza que desarrolla TinyNode</li>
+                          <li>EMBER: uno de los promotores de ZigBee</li>
+                          <li>SUN (Oracle): Sun SPOT, que utiliza la máquina virtual de Java</li>
+                          <li>Nano-RK: desarrolla FireFly</li>
+                        </ul>
+                      </div>
+
+                      <div id="diapositiva18" class="step slide" data-x="-1000" data-y="0">
+                        <h1>Aplicaciones</h1>
+                        <ul>
+                          <li>Agricultura de precisión</li>
+                          <li>Monitorización de parámetros ambientales</li>
+                          <li>Calidad del agua</li>
+                          <li>Mayor rendimiento de instalaciones solares y eólicas</li>
+                          <li>Aplicación en el sector de la construcción</li>
+                          <li>Eficiencia energética en edificios</li>
+                          <li>Lectura remota de contadores</li>
+                          <li>Procesos industriales</li>
+                          <li>Control de tráfico</li>
+                          <li>Control médico</li>
+                          <li>Domótica</li>
+                          <li>Prevención de desastres</li>
+                        </ul>
+                      </div>
+
+                      <div id="diapositiva19" class="step slide" data-x="3000" data-y="1500">
+                        <h1>Gracias</h1>
+                        <p>¿Alguna pregunta?</p>
+
+                        <h1>Referencias</h1>
+                        <ul>
+                          <li><a href="http://e-archivo.uc3m.es/bitstream/handle/10016/8493/PFC_AntonioManuel_Palma_Gomez.pdf?sequence=1">Universidad Carlos III de Madrid - ANÁLISIS DE PROTOCOLOS DE ENRUTAMIENTO PARA REDES DE SENSORES INALÁMBRICAS</a></li>
+                          <li><a href="http://riunet.upv.es/bitstream/handle/10251/8417/tesisUPV3326.pdf?sequence=11">Universidad Politécnica de Valencia - Redes inalámbricas de sensores: Una nueva arquitectura eficiente y robusta basada en jerarquía dinámica de grupos - Tesis</a></li>
+                          <li><a href="http://www.libelium.com/libelium-downloads/libelium-bit-coit.pdf">Artículo en Libelium de David Gascón</a></li>
+                          <li><a href="http://www.uv.es/~montanan/ampliacion/trabajos/Redes%20de%20Sensores.pdf">REDES DE SENSORES INALÁMBRICAS- Jesús Serna Sanchis</a> </li>
+                          <li>TinyOS: "An Operative System for Wireless Sensor Networks". Mark Weiss</li>
+                          <li>Redes inalámbricas de sensores: teoría y aplicación práctica. Roberto Fernández Martínez y otros. Universidad de La Rioja</li>
+                          <li>Shahin Farahni. "Zigbee. Wireless Networks and Transceivers"</li>
+                        </ul>
+                      </div>
 
     <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
     </div>
