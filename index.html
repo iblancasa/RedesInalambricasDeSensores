@@ -117,8 +117,9 @@
         <img src="images/6.jpg"/>
         </div>
 
-        <div id="diapositiva8" class="step slide" data-x="5000" data-y="-1500">
+        <div id="diapositiva8" class="step slide" data-x="6000" data-y="-1500">
           <h1>Lenguajes de programación</h1>
+          <p>Son lenguajes muy optimizados para no perder ciclos de reloj innecesariamente</p><br/>
           <ul>
             <li>nesC: "dialecto" de C muy utilizado en TinyOS</li>
             <li>SNACK: utilizado como sustituto del anterior cuando el volúmen de datos es muy alto o es preciso hacer muchos cálculos. Más sencillo y eficiente</li>
@@ -129,7 +130,61 @@
             </ul>
           </div>
 
+          <div id="diapositiva9" class="step slide" data-x="7000" data-y="-1500">
+            <h1>Simuladores</h1>
+            <ul>
+              <li>NS-2: es un simulador de eventos, orientado a la simulación de redes de investigación</li>
+              <li>OPNET: orientada a aplicaciones empresariales. Gestión de rendimiento, análisis de configuración de red y capacidad de modelado y planificación de la misma</li>
+              <li>OMNeT++: cuenta con un núcleo de simulación embebido. Su arquitectura es flexible y muy genérica. Muy popular en entornos industriales y científicos, debido a que es de código abierto</li>
+              <li>CodeBlue: diseñado para proporcionar encaminamiento, descubrimiento y seguridad para redes inalámbricas médicas</li>
+            </ul>
+            <p>Son muy ineficientes y, en ocasiones, complicados de utilizar. En muchas ocasiones, se opta por montar un prototipo de la WSN como si fuera
+              el entorno de producción</p>
+          </div>
 
+          <div id="diapositiva10" class="step slide" data-x="7000" data-y="0">
+            <h1>Problemas cartacterísticos de las WSN</h1>
+            <ul>
+              <li>Fiabilidad: la topología que usemos influirá. También, debido a interferencias, hay que tener en cuenta la utilización de los saltos en frecuencia</li>
+              <li>Conservación de la energía: es importante que la energía no sea un problema. El uso de protocolos de comunicación que tengan en cuenta esto,
+                el poner en un modo de ahorro de energía las motas mientras no se esté realizando comunicación y tener en cuenta los tiempos de activación de los transductores,
+                CPU... ayuda a minimizar este problema
+              </li>
+              <li>Tamaño de los sensores: suele estar limitado por el tamaño de la fuente de alimentación</li>
+              <li>Seguridad: es necesario que la comunicación sea segura. Puede que sea importante que los datos que se envían no deban ser vistos por
+                terceros. También es importante que no sea fácil acceder a la red (evitar que introduzcan datos erróneos, por ejemplo)</li>
+              </ul>
+            </div>
+
+            <div id="diapositiva11" class="step slide" data-x="6000" data-y="0">
+              <h1>Actualidad</h1>
+              <p>Para favorecer uno de los puntos fuertes de las WSN (su bajo costo), los fabricantes han intentado estandarizar los sus productos
+                para que puedan interoperar con otros<p>
+              <br/>
+              <p>Actualmente no existe un estándar para protocolos, hardware o representación de datos, aunque hay algunas propuestas</p>
+              </div>
+
+              <div id="diapositiva12" class="step slide" data-x="5000" data-y="0">
+                <h1>IEEE 802.15.4 LOW-RATE WPAN</h1>
+                <ul>
+                  <li>Permite transferencias de hasta 200kbps, pero es adaptable a las necesidades de las WSN (10kbps)</li>
+                  <li>Campo de direcciones de 16 bits extendible a 64 bits</li>
+                  <li>Permite implementar acuse de recibo de tramas</li>
+                  <li>Características diseñadas para minimizar el uso de nergía</li>
+                  <li>Tres funcionalidades de red: coordinador PAN (inicia la red y es el controlador de la misma y envía balizas),  coordinador (puede comunicarse con cualquier
+                    dispositivo a su alcance y envía balizas. Incluso, puede convertirse en coordinador PAN iniciando su propia red) y dispositivo (solo comunica con un coordinador o coordinador PAN)
+                  <li>Dos tipos de dispositivos: de función completa (debe tener memoria suficiente para guardar la información de enrutamiento que imponga la red. Puede tomar cualquiera de los tres roles) o de función
+                  reducida (poca memoria y solo puede funcionar como un dispositivo de red)</li>
+              </div>
+
+              <div id="diapositiva13" class="step slide" data-x="4000" data-y="0">
+                <h1>Alianza ZigBee: estandarizando capas de aplicación IEEE 802.15.4</h1>
+                <ul>
+                  <li>Estandariza las capas de aplicación de IEEE 802.15.4 para asegurar interoperatibilidad</li>
+                  <li>Baja velocidad de transferencia de datos y bajo coste</li>
+                  <li>Protocolo de acceso al medio poco eficiente (en términos energéticos)</li>
+                  <li>Topología de red formada por nodos simples y nodos de enrutamiento, con interconexiones en estrella (reducción de fiabilidad, del alcance y costoso energéticamente, ya que los nodos enrutadores tienen que estar encendidos siempre)</li>
+              </div>
 
 
     <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
